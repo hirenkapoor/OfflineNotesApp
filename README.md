@@ -46,11 +46,11 @@ SwiftUI View → ViewModel → Use Case → Repository → Data Sources (Core Da
 ## 📁 Folder Structure
 
 OfflineNotesApp/
-├── Core/ # DI container, Core Data stack, utilities
-├── Data/ # Repositories, data sources, mappers
-├── Domain/ # Entities (NoteEntity, UserEntity), Use Cases
-├── Presentation/ # SwiftUI Views, ViewModels, UI components
-├── OfflineNotesApp.swift # App entry point
+- Core/ # DI container, Core Data stack, utilities
+- Data/ # Repositories, data sources, mappers
+- Domain/ # Entities (NoteEntity, UserEntity), Use Cases
+- Presentation/ # SwiftUI Views, ViewModels, UI components
+- OfflineNotesApp.swift # App entry point
 
 ---
 

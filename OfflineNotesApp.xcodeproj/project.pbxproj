@@ -1,0 +1,820 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 56;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		FA0CCC992E479383000F5D82 /* OfflineNotesAppApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA0CCC982E479383000F5D82 /* OfflineNotesAppApp.swift */; };
+		FA0CCC9D2E479384000F5D82 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = FA0CCC9C2E479384000F5D82 /* Assets.xcassets */; };
+		FA0CCCA02E479384000F5D82 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = FA0CCC9F2E479384000F5D82 /* Preview Assets.xcassets */; };
+		FA0CCCA52E479384000F5D82 /* OfflineNotesApp.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = FA0CCCA32E479384000F5D82 /* OfflineNotesApp.xcdatamodeld */; };
+		FA0CCCAF2E479384000F5D82 /* OfflineNotesAppTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA0CCCAE2E479384000F5D82 /* OfflineNotesAppTests.swift */; };
+		FA0CCCCD2E479F6B000F5D82 /* CoreDataStack.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA0CCCCC2E479F6B000F5D82 /* CoreDataStack.swift */; };
+		FA0CCCD32E479FC6000F5D82 /* DIContainer.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA0CCCD22E479FC6000F5D82 /* DIContainer.swift */; };
+		FA0CCCD62E479FF4000F5D82 /* UserEntity.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA0CCCD52E479FF4000F5D82 /* UserEntity.swift */; };
+		FA0CCCD92E47A02E000F5D82 /* UserRepository.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA0CCCD82E47A02E000F5D82 /* UserRepository.swift */; };
+		FA0CCCDB2E47A03F000F5D82 /* NoteRepository.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA0CCCDA2E47A03F000F5D82 /* NoteRepository.swift */; };
+		FA0CCCDD2E47A055000F5D82 /* Validator.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA0CCCDC2E47A055000F5D82 /* Validator.swift */; };
+		FA0CCCE12E47A07E000F5D82 /* SignupView.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA0CCCE02E47A07E000F5D82 /* SignupView.swift */; };
+		FA0CCCE32E47A0A6000F5D82 /* SignupViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA0CCCE22E47A0A6000F5D82 /* SignupViewModel.swift */; };
+		FA0CCCE62E47A0DC000F5D82 /* User+Mapping.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA0CCCE52E47A0DC000F5D82 /* User+Mapping.swift */; };
+		FA0CCCE82E47A18A000F5D82 /* LoginViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA0CCCE72E47A18A000F5D82 /* LoginViewModel.swift */; };
+		FA0CCCEA2E47A1A2000F5D82 /* LoginView.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA0CCCE92E47A1A2000F5D82 /* LoginView.swift */; };
+		FA0CCCEC2E47A1C0000F5D82 /* HomeView.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA0CCCEB2E47A1C0000F5D82 /* HomeView.swift */; };
+		FA0CCCEE2E47A1D1000F5D82 /* HomeViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA0CCCED2E47A1D1000F5D82 /* HomeViewModel.swift */; };
+		FA0CCCF02E47A1EA000F5D82 /* NoteDetailView.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA0CCCEF2E47A1EA000F5D82 /* NoteDetailView.swift */; };
+		FA0CCCF22E47A200000F5D82 /* AddNoteViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA0CCCF12E47A200000F5D82 /* AddNoteViewModel.swift */; };
+		FA0CCCF42E47A20F000F5D82 /* AddNoteView.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA0CCCF32E47A20F000F5D82 /* AddNoteView.swift */; };
+		FA0CCCF72E47A236000F5D82 /* PhotoPicker.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA0CCCF62E47A236000F5D82 /* PhotoPicker.swift */; };
+		FA0CCCFA2E47A279000F5D82 /* SignupUseCase.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA0CCCF92E47A279000F5D82 /* SignupUseCase.swift */; };
+		FA0CCCFC2E47A292000F5D82 /* LoginUseCase.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA0CCCFB2E47A292000F5D82 /* LoginUseCase.swift */; };
+		FA0CCCFE2E47A2A1000F5D82 /* FetchNotesUseCase.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA0CCCFD2E47A2A1000F5D82 /* FetchNotesUseCase.swift */; };
+		FA0CCD002E47A2B0000F5D82 /* AddNoteUseCase.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA0CCCFF2E47A2B0000F5D82 /* AddNoteUseCase.swift */; };
+		FA0CCD032E47B234000F5D82 /* Router.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA0CCD022E47B234000F5D82 /* Router.swift */; };
+		FA0CCD052E47B29C000F5D82 /* RootView.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA0CCD042E47B29C000F5D82 /* RootView.swift */; };
+		FA5C35B32E48856D00C42AFF /* Note+Mapping.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA5C35B22E48856D00C42AFF /* Note+Mapping.swift */; };
+		FA5C35B52E48857800C42AFF /* Photo+Mapping.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA5C35B42E48857800C42AFF /* Photo+Mapping.swift */; };
+		FA5C35B72E4885BF00C42AFF /* NoteEntity.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA5C35B62E4885BF00C42AFF /* NoteEntity.swift */; };
+		FA5C35B92E4885DF00C42AFF /* PhotoEntity.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA5C35B82E4885DF00C42AFF /* PhotoEntity.swift */; };
+		FA5C35BB2E48863B00C42AFF /* EmptyStateText.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA5C35BA2E48863B00C42AFF /* EmptyStateText.swift */; };
+		FA5C35BD2E48866200C42AFF /* NoteRowView.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA5C35BC2E48866200C42AFF /* NoteRowView.swift */; };
+		FA6082632E48DBB7004C9391 /* CustomNavigationBar.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA6082622E48DBB7004C9391 /* CustomNavigationBar.swift */; };
+		FA67BA8B2E49A9EA00EC2324 /* Validator.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA0CCCDC2E47A055000F5D82 /* Validator.swift */; };
+		FA67BA8C2E49AA0800EC2324 /* Constants.swift in Sources */ = {isa = PBXBuildFile; fileRef = FAC292842E48736D0005B095 /* Constants.swift */; };
+		FAC2927B2E4857CB0005B095 /* ResizableImageView.swift in Sources */ = {isa = PBXBuildFile; fileRef = FAC2927A2E4857CB0005B095 /* ResizableImageView.swift */; };
+		FAC2927D2E48591F0005B095 /* PhotoEntity+Cache.swift in Sources */ = {isa = PBXBuildFile; fileRef = FAC2927C2E48591F0005B095 /* PhotoEntity+Cache.swift */; };
+		FAC292802E486D670005B095 /* CryptoHasher.swift in Sources */ = {isa = PBXBuildFile; fileRef = FAC2927F2E486D670005B095 /* CryptoHasher.swift */; };
+		FAC292852E48736D0005B095 /* Constants.swift in Sources */ = {isa = PBXBuildFile; fileRef = FAC292842E48736D0005B095 /* Constants.swift */; };
+		FAC292872E4875E00005B095 /* AppTextField.swift in Sources */ = {isa = PBXBuildFile; fileRef = FAC292862E4875E00005B095 /* AppTextField.swift */; };
+		FAC292892E4875EB0005B095 /* AppButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = FAC292882E4875EB0005B095 /* AppButton.swift */; };
+		FAC2928B2E4875F60005B095 /* AppText.swift in Sources */ = {isa = PBXBuildFile; fileRef = FAC2928A2E4875F60005B095 /* AppText.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		FA0CCCAB2E479384000F5D82 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = FA0CCC8D2E479382000F5D82 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = FA0CCC942E479383000F5D82;
+			remoteInfo = OfflineNotesApp;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		FA0CCC952E479383000F5D82 /* OfflineNotesApp.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = OfflineNotesApp.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		FA0CCC982E479383000F5D82 /* OfflineNotesAppApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OfflineNotesAppApp.swift; sourceTree = "<group>"; };
+		FA0CCC9C2E479384000F5D82 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		FA0CCC9F2E479384000F5D82 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
+		FA0CCCA42E479384000F5D82 /* OfflineNotesApp.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = OfflineNotesApp.xcdatamodel; sourceTree = "<group>"; };
+		FA0CCCAA2E479384000F5D82 /* OfflineNotesAppTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = OfflineNotesAppTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		FA0CCCAE2E479384000F5D82 /* OfflineNotesAppTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OfflineNotesAppTests.swift; sourceTree = "<group>"; };
+		FA0CCCCC2E479F6B000F5D82 /* CoreDataStack.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CoreDataStack.swift; sourceTree = "<group>"; };
+		FA0CCCD22E479FC6000F5D82 /* DIContainer.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DIContainer.swift; sourceTree = "<group>"; };
+		FA0CCCD52E479FF4000F5D82 /* UserEntity.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserEntity.swift; sourceTree = "<group>"; };
+		FA0CCCD82E47A02E000F5D82 /* UserRepository.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserRepository.swift; sourceTree = "<group>"; };
+		FA0CCCDA2E47A03F000F5D82 /* NoteRepository.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NoteRepository.swift; sourceTree = "<group>"; };
+		FA0CCCDC2E47A055000F5D82 /* Validator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Validator.swift; sourceTree = "<group>"; };
+		FA0CCCE02E47A07E000F5D82 /* SignupView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignupView.swift; sourceTree = "<group>"; };
+		FA0CCCE22E47A0A6000F5D82 /* SignupViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignupViewModel.swift; sourceTree = "<group>"; };
+		FA0CCCE52E47A0DC000F5D82 /* User+Mapping.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "User+Mapping.swift"; sourceTree = "<group>"; };
+		FA0CCCE72E47A18A000F5D82 /* LoginViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginViewModel.swift; sourceTree = "<group>"; };
+		FA0CCCE92E47A1A2000F5D82 /* LoginView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginView.swift; sourceTree = "<group>"; };
+		FA0CCCEB2E47A1C0000F5D82 /* HomeView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeView.swift; sourceTree = "<group>"; };
+		FA0CCCED2E47A1D1000F5D82 /* HomeViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeViewModel.swift; sourceTree = "<group>"; };
+		FA0CCCEF2E47A1EA000F5D82 /* NoteDetailView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NoteDetailView.swift; sourceTree = "<group>"; };
+		FA0CCCF12E47A200000F5D82 /* AddNoteViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AddNoteViewModel.swift; sourceTree = "<group>"; };
+		FA0CCCF32E47A20F000F5D82 /* AddNoteView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AddNoteView.swift; sourceTree = "<group>"; };
+		FA0CCCF62E47A236000F5D82 /* PhotoPicker.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PhotoPicker.swift; sourceTree = "<group>"; };
+		FA0CCCF92E47A279000F5D82 /* SignupUseCase.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignupUseCase.swift; sourceTree = "<group>"; };
+		FA0CCCFB2E47A292000F5D82 /* LoginUseCase.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginUseCase.swift; sourceTree = "<group>"; };
+		FA0CCCFD2E47A2A1000F5D82 /* FetchNotesUseCase.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FetchNotesUseCase.swift; sourceTree = "<group>"; };
+		FA0CCCFF2E47A2B0000F5D82 /* AddNoteUseCase.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AddNoteUseCase.swift; sourceTree = "<group>"; };
+		FA0CCD022E47B234000F5D82 /* Router.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Router.swift; sourceTree = "<group>"; };
+		FA0CCD042E47B29C000F5D82 /* RootView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RootView.swift; sourceTree = "<group>"; };
+		FA5C35B22E48856D00C42AFF /* Note+Mapping.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Note+Mapping.swift"; sourceTree = "<group>"; };
+		FA5C35B42E48857800C42AFF /* Photo+Mapping.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Photo+Mapping.swift"; sourceTree = "<group>"; };
+		FA5C35B62E4885BF00C42AFF /* NoteEntity.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NoteEntity.swift; sourceTree = "<group>"; };
+		FA5C35B82E4885DF00C42AFF /* PhotoEntity.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PhotoEntity.swift; sourceTree = "<group>"; };
+		FA5C35BA2E48863B00C42AFF /* EmptyStateText.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EmptyStateText.swift; sourceTree = "<group>"; };
+		FA5C35BC2E48866200C42AFF /* NoteRowView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NoteRowView.swift; sourceTree = "<group>"; };
+		FA6082622E48DBB7004C9391 /* CustomNavigationBar.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomNavigationBar.swift; sourceTree = "<group>"; };
+		FAC2927A2E4857CB0005B095 /* ResizableImageView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ResizableImageView.swift; sourceTree = "<group>"; };
+		FAC2927C2E48591F0005B095 /* PhotoEntity+Cache.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "PhotoEntity+Cache.swift"; sourceTree = "<group>"; };
+		FAC2927F2E486D670005B095 /* CryptoHasher.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CryptoHasher.swift; sourceTree = "<group>"; };
+		FAC292842E48736D0005B095 /* Constants.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Constants.swift; sourceTree = "<group>"; };
+		FAC292862E4875E00005B095 /* AppTextField.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppTextField.swift; sourceTree = "<group>"; };
+		FAC292882E4875EB0005B095 /* AppButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppButton.swift; sourceTree = "<group>"; };
+		FAC2928A2E4875F60005B095 /* AppText.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppText.swift; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		FA0CCC922E479383000F5D82 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		FA0CCCA72E479384000F5D82 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		FA0CCC8C2E479382000F5D82 = {
+			isa = PBXGroup;
+			children = (
+				FA0CCC972E479383000F5D82 /* OfflineNotesApp */,
+				FA0CCCAD2E479384000F5D82 /* OfflineNotesAppTests */,
+				FA0CCC962E479383000F5D82 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		FA0CCC962E479383000F5D82 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				FA0CCC952E479383000F5D82 /* OfflineNotesApp.app */,
+				FA0CCCAA2E479384000F5D82 /* OfflineNotesAppTests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		FA0CCC972E479383000F5D82 /* OfflineNotesApp */ = {
+			isa = PBXGroup;
+			children = (
+				FA0CCCCA2E4797A2000F5D82 /* Core */,
+				FA0CCCC92E47979B000F5D82 /* Data */,
+				FA0CCCC82E479794000F5D82 /* Domain */,
+				FA0CCCC72E47978C000F5D82 /* Presentation */,
+				FA0CCC982E479383000F5D82 /* OfflineNotesAppApp.swift */,
+				FA0CCC9C2E479384000F5D82 /* Assets.xcassets */,
+				FA0CCCA32E479384000F5D82 /* OfflineNotesApp.xcdatamodeld */,
+				FA0CCC9E2E479384000F5D82 /* Preview Content */,
+			);
+			path = OfflineNotesApp;
+			sourceTree = "<group>";
+		};
+		FA0CCC9E2E479384000F5D82 /* Preview Content */ = {
+			isa = PBXGroup;
+			children = (
+				FA0CCC9F2E479384000F5D82 /* Preview Assets.xcassets */,
+			);
+			path = "Preview Content";
+			sourceTree = "<group>";
+		};
+		FA0CCCAD2E479384000F5D82 /* OfflineNotesAppTests */ = {
+			isa = PBXGroup;
+			children = (
+				FA0CCCAE2E479384000F5D82 /* OfflineNotesAppTests.swift */,
+			);
+			path = OfflineNotesAppTests;
+			sourceTree = "<group>";
+		};
+		FA0CCCC72E47978C000F5D82 /* Presentation */ = {
+			isa = PBXGroup;
+			children = (
+				FA0CCCDF2E47A06E000F5D82 /* Views */,
+				FA0CCCDE2E47A064000F5D82 /* ViewModels */,
+			);
+			path = Presentation;
+			sourceTree = "<group>";
+		};
+		FA0CCCC82E479794000F5D82 /* Domain */ = {
+			isa = PBXGroup;
+			children = (
+				FA0CCCF82E47A25B000F5D82 /* UseCase */,
+				FA0CCCD42E479FD5000F5D82 /* Entities */,
+			);
+			path = Domain;
+			sourceTree = "<group>";
+		};
+		FA0CCCC92E47979B000F5D82 /* Data */ = {
+			isa = PBXGroup;
+			children = (
+				FA0CCCE42E47A0D3000F5D82 /* ModelEntityMappers */,
+				FA0CCCD72E47A024000F5D82 /* Repository */,
+			);
+			path = Data;
+			sourceTree = "<group>";
+		};
+		FA0CCCCA2E4797A2000F5D82 /* Core */ = {
+			isa = PBXGroup;
+			children = (
+				FAC292902E487BA40005B095 /* Utilities */,
+				FA0CCD012E47B229000F5D82 /* Router */,
+				FA0CCCD12E479FB5000F5D82 /* DI */,
+				FA0CCCCB2E479F5B000F5D82 /* CoreData */,
+			);
+			path = Core;
+			sourceTree = "<group>";
+		};
+		FA0CCCCB2E479F5B000F5D82 /* CoreData */ = {
+			isa = PBXGroup;
+			children = (
+				FA0CCCCC2E479F6B000F5D82 /* CoreDataStack.swift */,
+			);
+			path = CoreData;
+			sourceTree = "<group>";
+		};
+		FA0CCCD12E479FB5000F5D82 /* DI */ = {
+			isa = PBXGroup;
+			children = (
+				FA0CCCD22E479FC6000F5D82 /* DIContainer.swift */,
+			);
+			path = DI;
+			sourceTree = "<group>";
+		};
+		FA0CCCD42E479FD5000F5D82 /* Entities */ = {
+			isa = PBXGroup;
+			children = (
+				FA0CCCD52E479FF4000F5D82 /* UserEntity.swift */,
+				FA5C35B62E4885BF00C42AFF /* NoteEntity.swift */,
+				FA5C35B82E4885DF00C42AFF /* PhotoEntity.swift */,
+			);
+			path = Entities;
+			sourceTree = "<group>";
+		};
+		FA0CCCD72E47A024000F5D82 /* Repository */ = {
+			isa = PBXGroup;
+			children = (
+				FA0CCCD82E47A02E000F5D82 /* UserRepository.swift */,
+				FA0CCCDA2E47A03F000F5D82 /* NoteRepository.swift */,
+			);
+			path = Repository;
+			sourceTree = "<group>";
+		};
+		FA0CCCDE2E47A064000F5D82 /* ViewModels */ = {
+			isa = PBXGroup;
+			children = (
+				FA0CCCE22E47A0A6000F5D82 /* SignupViewModel.swift */,
+				FA0CCCE72E47A18A000F5D82 /* LoginViewModel.swift */,
+				FA0CCCED2E47A1D1000F5D82 /* HomeViewModel.swift */,
+				FA0CCCF12E47A200000F5D82 /* AddNoteViewModel.swift */,
+			);
+			path = ViewModels;
+			sourceTree = "<group>";
+		};
+		FA0CCCDF2E47A06E000F5D82 /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				FAC2928F2E487B540005B095 /* Screen */,
+				FAC2928D2E487AF70005B095 /* Shared */,
+				FAC2928C2E487AD10005B095 /* Components */,
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
+		FA0CCCE42E47A0D3000F5D82 /* ModelEntityMappers */ = {
+			isa = PBXGroup;
+			children = (
+				FA0CCCE52E47A0DC000F5D82 /* User+Mapping.swift */,
+				FA5C35B22E48856D00C42AFF /* Note+Mapping.swift */,
+				FA5C35B42E48857800C42AFF /* Photo+Mapping.swift */,
+			);
+			path = ModelEntityMappers;
+			sourceTree = "<group>";
+		};
+		FA0CCCF52E47A226000F5D82 /* PhotoPicker */ = {
+			isa = PBXGroup;
+			children = (
+				FA0CCCF62E47A236000F5D82 /* PhotoPicker.swift */,
+			);
+			path = PhotoPicker;
+			sourceTree = "<group>";
+		};
+		FA0CCCF82E47A25B000F5D82 /* UseCase */ = {
+			isa = PBXGroup;
+			children = (
+				FA0CCCF92E47A279000F5D82 /* SignupUseCase.swift */,
+				FA0CCCFB2E47A292000F5D82 /* LoginUseCase.swift */,
+				FA0CCCFD2E47A2A1000F5D82 /* FetchNotesUseCase.swift */,
+				FA0CCCFF2E47A2B0000F5D82 /* AddNoteUseCase.swift */,
+			);
+			path = UseCase;
+			sourceTree = "<group>";
+		};
+		FA0CCD012E47B229000F5D82 /* Router */ = {
+			isa = PBXGroup;
+			children = (
+				FA0CCD022E47B234000F5D82 /* Router.swift */,
+			);
+			path = Router;
+			sourceTree = "<group>";
+		};
+		FA5C35B12E48848E00C42AFF /* Validator */ = {
+			isa = PBXGroup;
+			children = (
+				FA0CCCDC2E47A055000F5D82 /* Validator.swift */,
+			);
+			path = Validator;
+			sourceTree = "<group>";
+		};
+		FAC2927E2E486D5F0005B095 /* CryptoHasher */ = {
+			isa = PBXGroup;
+			children = (
+				FAC2927F2E486D670005B095 /* CryptoHasher.swift */,
+			);
+			path = CryptoHasher;
+			sourceTree = "<group>";
+		};
+		FAC292832E48735D0005B095 /* Constants */ = {
+			isa = PBXGroup;
+			children = (
+				FAC292842E48736D0005B095 /* Constants.swift */,
+			);
+			path = Constants;
+			sourceTree = "<group>";
+		};
+		FAC2928C2E487AD10005B095 /* Components */ = {
+			isa = PBXGroup;
+			children = (
+				FAC292862E4875E00005B095 /* AppTextField.swift */,
+				FAC292882E4875EB0005B095 /* AppButton.swift */,
+				FAC2928A2E4875F60005B095 /* AppText.swift */,
+			);
+			path = Components;
+			sourceTree = "<group>";
+		};
+		FAC2928D2E487AF70005B095 /* Shared */ = {
+			isa = PBXGroup;
+			children = (
+				FA0CCD042E47B29C000F5D82 /* RootView.swift */,
+				FAC2927A2E4857CB0005B095 /* ResizableImageView.swift */,
+				FA5C35BA2E48863B00C42AFF /* EmptyStateText.swift */,
+				FA5C35BC2E48866200C42AFF /* NoteRowView.swift */,
+				FA6082622E48DBB7004C9391 /* CustomNavigationBar.swift */,
+			);
+			path = Shared;
+			sourceTree = "<group>";
+		};
+		FAC2928E2E487B140005B095 /* Extension */ = {
+			isa = PBXGroup;
+			children = (
+				FAC2927C2E48591F0005B095 /* PhotoEntity+Cache.swift */,
+			);
+			path = Extension;
+			sourceTree = "<group>";
+		};
+		FAC2928F2E487B540005B095 /* Screen */ = {
+			isa = PBXGroup;
+			children = (
+				FA0CCCE02E47A07E000F5D82 /* SignupView.swift */,
+				FA0CCCE92E47A1A2000F5D82 /* LoginView.swift */,
+				FA0CCCEB2E47A1C0000F5D82 /* HomeView.swift */,
+				FA0CCCEF2E47A1EA000F5D82 /* NoteDetailView.swift */,
+				FA0CCCF32E47A20F000F5D82 /* AddNoteView.swift */,
+			);
+			path = Screen;
+			sourceTree = "<group>";
+		};
+		FAC292902E487BA40005B095 /* Utilities */ = {
+			isa = PBXGroup;
+			children = (
+				FAC2927E2E486D5F0005B095 /* CryptoHasher */,
+				FAC292832E48735D0005B095 /* Constants */,
+				FAC2928E2E487B140005B095 /* Extension */,
+				FA5C35B12E48848E00C42AFF /* Validator */,
+				FA0CCCF52E47A226000F5D82 /* PhotoPicker */,
+			);
+			path = Utilities;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		FA0CCC942E479383000F5D82 /* OfflineNotesApp */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = FA0CCCBE2E479384000F5D82 /* Build configuration list for PBXNativeTarget "OfflineNotesApp" */;
+			buildPhases = (
+				FA0CCC912E479383000F5D82 /* Sources */,
+				FA0CCC922E479383000F5D82 /* Frameworks */,
+				FA0CCC932E479383000F5D82 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = OfflineNotesApp;
+			productName = OfflineNotesApp;
+			productReference = FA0CCC952E479383000F5D82 /* OfflineNotesApp.app */;
+			productType = "com.apple.product-type.application";
+		};
+		FA0CCCA92E479384000F5D82 /* OfflineNotesAppTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = FA0CCCC12E479384000F5D82 /* Build configuration list for PBXNativeTarget "OfflineNotesAppTests" */;
+			buildPhases = (
+				FA0CCCA62E479384000F5D82 /* Sources */,
+				FA0CCCA72E479384000F5D82 /* Frameworks */,
+				FA0CCCA82E479384000F5D82 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				FA0CCCAC2E479384000F5D82 /* PBXTargetDependency */,
+			);
+			name = OfflineNotesAppTests;
+			productName = OfflineNotesAppTests;
+			productReference = FA0CCCAA2E479384000F5D82 /* OfflineNotesAppTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		FA0CCC8D2E479382000F5D82 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				BuildIndependentTargetsInParallel = 1;
+				LastSwiftUpdateCheck = 1420;
+				LastUpgradeCheck = 1420;
+				TargetAttributes = {
+					FA0CCC942E479383000F5D82 = {
+						CreatedOnToolsVersion = 14.2;
+					};
+					FA0CCCA92E479384000F5D82 = {
+						CreatedOnToolsVersion = 14.2;
+						TestTargetID = FA0CCC942E479383000F5D82;
+					};
+				};
+			};
+			buildConfigurationList = FA0CCC902E479382000F5D82 /* Build configuration list for PBXProject "OfflineNotesApp" */;
+			compatibilityVersion = "Xcode 14.0";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = FA0CCC8C2E479382000F5D82;
+			productRefGroup = FA0CCC962E479383000F5D82 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				FA0CCC942E479383000F5D82 /* OfflineNotesApp */,
+				FA0CCCA92E479384000F5D82 /* OfflineNotesAppTests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		FA0CCC932E479383000F5D82 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				FA0CCCA02E479384000F5D82 /* Preview Assets.xcassets in Resources */,
+				FA0CCC9D2E479384000F5D82 /* Assets.xcassets in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		FA0CCCA82E479384000F5D82 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		FA0CCC912E479383000F5D82 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				FA0CCCFA2E47A279000F5D82 /* SignupUseCase.swift in Sources */,
+				FA0CCD002E47A2B0000F5D82 /* AddNoteUseCase.swift in Sources */,
+				FAC2927B2E4857CB0005B095 /* ResizableImageView.swift in Sources */,
+				FA0CCCF22E47A200000F5D82 /* AddNoteViewModel.swift in Sources */,
+				FA0CCCD32E479FC6000F5D82 /* DIContainer.swift in Sources */,
+				FAC292852E48736D0005B095 /* Constants.swift in Sources */,
+				FA0CCCEE2E47A1D1000F5D82 /* HomeViewModel.swift in Sources */,
+				FA0CCCCD2E479F6B000F5D82 /* CoreDataStack.swift in Sources */,
+				FA0CCCE12E47A07E000F5D82 /* SignupView.swift in Sources */,
+				FA0CCCD92E47A02E000F5D82 /* UserRepository.swift in Sources */,
+				FA0CCCEC2E47A1C0000F5D82 /* HomeView.swift in Sources */,
+				FA0CCCDD2E47A055000F5D82 /* Validator.swift in Sources */,
+				FA0CCCE62E47A0DC000F5D82 /* User+Mapping.swift in Sources */,
+				FA0CCCF02E47A1EA000F5D82 /* NoteDetailView.swift in Sources */,
+				FA0CCCF72E47A236000F5D82 /* PhotoPicker.swift in Sources */,
+				FA0CCCF42E47A20F000F5D82 /* AddNoteView.swift in Sources */,
+				FAC2927D2E48591F0005B095 /* PhotoEntity+Cache.swift in Sources */,
+				FAC2928B2E4875F60005B095 /* AppText.swift in Sources */,
+				FA6082632E48DBB7004C9391 /* CustomNavigationBar.swift in Sources */,
+				FA0CCCE82E47A18A000F5D82 /* LoginViewModel.swift in Sources */,
+				FA5C35BB2E48863B00C42AFF /* EmptyStateText.swift in Sources */,
+				FA5C35B72E4885BF00C42AFF /* NoteEntity.swift in Sources */,
+				FA5C35BD2E48866200C42AFF /* NoteRowView.swift in Sources */,
+				FA0CCCE32E47A0A6000F5D82 /* SignupViewModel.swift in Sources */,
+				FAC292802E486D670005B095 /* CryptoHasher.swift in Sources */,
+				FA0CCD032E47B234000F5D82 /* Router.swift in Sources */,
+				FA0CCCDB2E47A03F000F5D82 /* NoteRepository.swift in Sources */,
+				FA0CCCFE2E47A2A1000F5D82 /* FetchNotesUseCase.swift in Sources */,
+				FA0CCCD62E479FF4000F5D82 /* UserEntity.swift in Sources */,
+				FA0CCCA52E479384000F5D82 /* OfflineNotesApp.xcdatamodeld in Sources */,
+				FAC292892E4875EB0005B095 /* AppButton.swift in Sources */,
+				FA5C35B52E48857800C42AFF /* Photo+Mapping.swift in Sources */,
+				FA5C35B32E48856D00C42AFF /* Note+Mapping.swift in Sources */,
+				FA0CCCEA2E47A1A2000F5D82 /* LoginView.swift in Sources */,
+				FA0CCC992E479383000F5D82 /* OfflineNotesAppApp.swift in Sources */,
+				FA0CCCFC2E47A292000F5D82 /* LoginUseCase.swift in Sources */,
+				FA0CCD052E47B29C000F5D82 /* RootView.swift in Sources */,
+				FAC292872E4875E00005B095 /* AppTextField.swift in Sources */,
+				FA5C35B92E4885DF00C42AFF /* PhotoEntity.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		FA0CCCA62E479384000F5D82 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				FA67BA8B2E49A9EA00EC2324 /* Validator.swift in Sources */,
+				FA0CCCAF2E479384000F5D82 /* OfflineNotesAppTests.swift in Sources */,
+				FA67BA8C2E49AA0800EC2324 /* Constants.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		FA0CCCAC2E479384000F5D82 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = FA0CCC942E479383000F5D82 /* OfflineNotesApp */;
+			targetProxy = FA0CCCAB2E479384000F5D82 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin XCBuildConfiguration section */
+		FA0CCCBC2E479384000F5D82 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 16.2;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		FA0CCCBD2E479384000F5D82 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 16.2;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		FA0CCCBF2E479384000F5D82 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_ASSET_PATHS = "\"OfflineNotesApp/Preview Content\"";
+				ENABLE_PREVIEWS = YES;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_NSPhotoLibraryUsageDescription = "We need access to your photo library to allow you to select images for your notes.";
+				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations = UIInterfaceOrientationPortrait;
+				INFOPLIST_KEY_UIUserInterfaceStyle = Light;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.OfflineNotesApp.OfflineNotesApp;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator";
+				SUPPORTS_MACCATALYST = NO;
+				SUPPORTS_MAC_DESIGNED_FOR_IPHONE_IPAD = NO;
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		FA0CCCC02E479384000F5D82 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_ASSET_PATHS = "\"OfflineNotesApp/Preview Content\"";
+				ENABLE_PREVIEWS = YES;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_NSPhotoLibraryUsageDescription = "We need access to your photo library to allow you to select images for your notes.";
+				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations = UIInterfaceOrientationPortrait;
+				INFOPLIST_KEY_UIUserInterfaceStyle = Light;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.OfflineNotesApp.OfflineNotesApp;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator";
+				SUPPORTS_MACCATALYST = NO;
+				SUPPORTS_MAC_DESIGNED_FOR_IPHONE_IPAD = NO;
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+		FA0CCCC22E479384000F5D82 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				GENERATE_INFOPLIST_FILE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 16.2;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.OfflineNotesApp.OfflineNotesAppTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator";
+				SUPPORTS_MACCATALYST = NO;
+				SUPPORTS_MAC_DESIGNED_FOR_IPHONE_IPAD = NO;
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = 1;
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/OfflineNotesApp.app/$(BUNDLE_EXECUTABLE_FOLDER_PATH)/OfflineNotesApp";
+			};
+			name = Debug;
+		};
+		FA0CCCC32E479384000F5D82 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				GENERATE_INFOPLIST_FILE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 16.2;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.OfflineNotesApp.OfflineNotesAppTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator";
+				SUPPORTS_MACCATALYST = NO;
+				SUPPORTS_MAC_DESIGNED_FOR_IPHONE_IPAD = NO;
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = 1;
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/OfflineNotesApp.app/$(BUNDLE_EXECUTABLE_FOLDER_PATH)/OfflineNotesApp";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		FA0CCC902E479382000F5D82 /* Build configuration list for PBXProject "OfflineNotesApp" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				FA0CCCBC2E479384000F5D82 /* Debug */,
+				FA0CCCBD2E479384000F5D82 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		FA0CCCBE2E479384000F5D82 /* Build configuration list for PBXNativeTarget "OfflineNotesApp" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				FA0CCCBF2E479384000F5D82 /* Debug */,
+				FA0CCCC02E479384000F5D82 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		FA0CCCC12E479384000F5D82 /* Build configuration list for PBXNativeTarget "OfflineNotesAppTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				FA0CCCC22E479384000F5D82 /* Debug */,
+				FA0CCCC32E479384000F5D82 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+
+/* Begin XCVersionGroup section */
+		FA0CCCA32E479384000F5D82 /* OfflineNotesApp.xcdatamodeld */ = {
+			isa = XCVersionGroup;
+			children = (
+				FA0CCCA42E479384000F5D82 /* OfflineNotesApp.xcdatamodel */,
+			);
+			currentVersion = FA0CCCA42E479384000F5D82 /* OfflineNotesApp.xcdatamodel */;
+			path = OfflineNotesApp.xcdatamodeld;
+			sourceTree = "<group>";
+			versionGroupType = wrapper.xcdatamodel;
+		};
+/* End XCVersionGroup section */
+	};
+	rootObject = FA0CCC8D2E479382000F5D82 /* Project object */;
+}
